@@ -2,7 +2,7 @@ name: Sync Leetcode
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * 1/6" # Automatically runs once a week.
+    - cron: "30 18 * * *"
 jobs:
   build:
     runs-on: ubuntu-latest
