@@ -7,12 +7,13 @@ public:
             slow=nums[slow];
             fast=nums[nums[fast]];
         }
-        slow=0;
-        while(slow!=fast){
+        int ptr=0;
+        while(slow!=ptr){
             slow=nums[slow];
-            fast=nums[fast];
+            ptr=nums[ptr];
         }
         return slow;
-
     }
 };
+
+//the slow and fast pointer is used to iterate and slow pointer points to the ans's prev value. We take antother ptr and move 1 place to find the final answer.
