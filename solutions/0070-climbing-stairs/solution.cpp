@@ -11,7 +11,7 @@ public:
             a=b;
             b=c;
         }
-       return c;
-        
+       return c; 
     }
 };
+//using the fibonacci logic here!
