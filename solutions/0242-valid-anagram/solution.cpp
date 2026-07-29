@@ -15,6 +15,10 @@ public:
             }
         }
         return true;
-
     }
 };
+// Fast fail if lengths differ. Use a 26-size frequency array to map 'a'-'z'.
+// +1 for chars in 's', -1 for chars in 't'. If it perfectly zeroes out, it's an anagram.
+// Note: If the interviewer asks about Unicode(all characters), switch the array to a Hash Map.
+// TC: O(n) and SC: O(1)
+
